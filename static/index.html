@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      width: 50%;
+    }
+    .item {
+      padding: 10px 0;
+
+    }
+    div {
+
+      text-align: center;
+    }
+    button {
+      margin-top: 10px;
+      margin-left: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="item">视频地址：<input type="text" class="src" value="http://39.108.186.101:3000/m/4030249183.mp4"></div>
+  <div class="item">开始时间：<input type="text" class="startTime" value="00:00:30">
+    <div>(格式：00:00:00)</div>
+  </div>
+  <div>结束时间：<input type="text" class="endTime" value="00:00:50">
+    <div>(需要截取的秒数或者时间, 例如，格式1:  00:01:00  |  格式2:   30      )</div>
+  </div>
+  <div><button class="startCapture">开始截取</button></div>
+  <div class="loading"></div>
+  <div class="download"></div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
